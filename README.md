@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# dessert
+# dessert <a href="https://github.com/ernst-paul/dessert"><img src="man/figures/logo.png" align="right" height="139" /></a>
 
 <!-- badges: start -->
 <!-- badges: end -->
