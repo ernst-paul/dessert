@@ -4,13 +4,10 @@
 \alias{get_yamls}
 \title{Get YAMLS}
 \usage{
-get_yamls(spoon)
-}
-\arguments{
-\item{spoon}{A character vector with, at most, one element.}
+get_yamls()
 }
 \value{
-A tibble.
+A list.
 }
 \description{
 Get YAMLS

@@ -1,3 +1,3 @@
-test_that("get_yamls() returns NULL", {
-  expect_equal(get_yamls(), NULL)
+test_that("get_yamls() returns a list", {
+  expect_true(is.list(get_yamls()))
 })
