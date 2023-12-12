@@ -31,21 +31,20 @@ title-block-banner: true
 
 ```{r}
 #| include = FALSE
-input <- list(
-  object = lm(Sepal.Length ~ ., data = iris),
-  params = list(
-    seed = 1,
-    a = "a",
-    b = NULL,
-    c = 123
-  )
+input <- tryCatch( 
+  {
+    read.csv("data.csv")
+  },
+  error = function(e) {
+    lm(Sepal.Length ~ ., iris)
+  }
 )
 ```
 
 ### Linearity
 
 ```{r}
-plot(input$object, 1)
+plot(input, which = 3)
 ```
 
 

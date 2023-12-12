@@ -23,7 +23,7 @@ get_yamls <- function() {
     yaml$name <- fs::path_ext_remove(basename(file_path))
     yamls <- append(yamls, list(yaml))
   }
-  yamls
+  invisible(yamls)
 }
 
 
