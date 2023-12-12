@@ -20,9 +20,13 @@ preview_spoon <- function(
     navigate = TRUE) {
   tmp_path <- tempdir()
   pkg_path <- fs::path_package("dessert")
-  # optional qmd
+  spoon <- sub('\\.qmd$', '', spoon)
   spoon_path <- fs::path(pkg_path, "spoon", spoon, ext = "qmd")
-  # check file.copy
+  if (!file.exists(spoon_path)) {
+    stop(
+      paste0("cannot open file \"", spoon,".qmd\": No such file or directory")
+    )
+  }
   file.copy(spoon_path, tmp_path)
   spoon_path <- fs::path(tmp_path, spoon, ext = "qmd")
   quarto::quarto_preview(spoon_path)
