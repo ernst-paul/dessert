@@ -6,11 +6,16 @@ classes:
  - "lm"
  - "glm"
 parameters:
- seed: 1
+ seed: 10
+ example: 
 parameters_description:
  seed: "A number used to initialize a pseudorandom number generator."
+ example: "An example"
 authors:
  - name: "Ernst Paul Swens"
+   url: https://github.com/ernst-paul
+   affiliation: 
+ - name: "J J Keysian"
    url: https://github.com/ernst-paul
    affiliation: 
 format:
