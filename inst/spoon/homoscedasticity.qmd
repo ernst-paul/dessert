@@ -3,7 +3,6 @@ title: "Homoscedasticity Assumption"
 category: "Assumption"
 description: "This dessert evaluates the assumption that the residuals have equal variance (homoscedasticity) for every value of the fitted values and of the predictors."
 classes:
- - "lm"
  - "glm"
 parameters:
  seed: 1

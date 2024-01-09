@@ -3,3 +3,5 @@
 export(ask_spoon)
 export(preview_spoon)
 export(quit_preview)
+export(spoon)
+export(suggest_spoon)

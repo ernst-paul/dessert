@@ -30,7 +30,7 @@ preview_spoon <- function(
   file.copy(spoon_path, tmp_path)
   spoon_path <- fs::path(tmp_path, spoon, ext = "qmd")
   quarto::quarto_preview(spoon_path)
-  cat(" from the quarto package or use quit_preview()")
+  cat(" from the quarto package or use the function quit_preview()")
 }
 
 #' @rdname preview_spoon
